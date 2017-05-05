@@ -46,7 +46,7 @@
 	</style>
 </head>
 <body>
-	<div class="tab">
+	<div class="tab" id="tab">
 		<ul>
 			<li><span>1</span></li>
 			<li><span>2</span></li>
@@ -68,11 +68,11 @@
 
 
 
- 	NavTouch(document.querySelectorAll('.tab')[0]);
+ 	// NavTouch('.tab');
 
 // 弹性滑动
 
-// NavTouch(document.querySelectorAll('.tab')[0],{elastic:true,speed:'0.3s',timing:'linear'});
+NavTouch('.tab',{elastic:true,speed:'0.3s',timing:'linear'});
 
 </script>
 </html>

@@ -4,8 +4,7 @@
 	var NavSlip = function( ele , options ){
 
 		if(!ele) return null;
-
-		this.container = ele;
+		this.container = document.querySelectorAll(ele)[0];
 
 		this.options = options || {};
 		this.speed = this.options.speed || '0.3s';
@@ -34,12 +33,12 @@
 
 		initParam:function(){
 			return{
-				startX : 0,	//	start×ø±ê
-				moveX : 0,	// move×ø±ê
-				endX : 0,	//	end×ø±ê
-				differX : 0,// touch×ø±ê²îÖµ
-				tempX : 0,//ÁÙÊ±¼ÇÂ¼×ø±ê
-				transl : null //transform±äÁ¿
+				startX : 0,	//	startÃ—Ã¸Â±Ãª
+				moveX : 0,	// moveÃ—Ã¸Â±Ãª
+				endX : 0,	//	endÃ—Ã¸Â±Ãª
+				differX : 0,// touchÃ—Ã¸Â±ÃªÂ²Ã®Ã–Âµ
+				tempX : 0,//ÃÃ™ÃŠÂ±Â¼Ã‡Ã‚Â¼Ã—Ã¸Â±Ãª
+				transl : null //transformÂ±Ã¤ÃÂ¿
 			}
 		},
 
